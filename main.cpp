@@ -170,6 +170,7 @@ int main(int argc, char** argv)
                     NULL,
                     // In the overlap operation, this parameter points to an OVERLAPPED structure. When the operation is synchronized, this parameter is NULL.
                     &state->rx_overlapped);
+                state->rx_read = false;
             }
         }
 
